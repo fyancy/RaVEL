@@ -5,8 +5,7 @@
 
 Fast Random Wavelet Convolution for Early Fault Diagnosis
 
-Codes will be FULLY publicly available once the peer review is finished.
-
+**Codes will be FULLY publicly available once the peer review is finished.**
 <div align=center>
 <img src="/figs/rl_acc.png" width="400">
 </div>
