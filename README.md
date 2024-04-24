@@ -5,7 +5,9 @@
 
 Fast Random Wavelet Convolution for Early Fault Diagnosis
 
-**Codes will be FULLY publicly available once the peer review is finished.**
+**Codes will be FULLY publicly available once the peer review is finished.** 🙃 🗓
+
+## Performance 🚀
 <div align=center>
 <img src="/figs/rl_acc.png" width="400">
 </div>
@@ -13,6 +15,7 @@ Fast Random Wavelet Convolution for Early Fault Diagnosis
 Fig. 1. Comparison of the proposed method with SOTA methods for EFD. 
 </p>
 
+## Structure 🔑
 <div align=center>
 <img src="/figs/structure_comparison_v2.jpg" width="900">
 </div>
