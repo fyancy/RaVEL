@@ -26,18 +26,18 @@ features, (c) hybrid features, and (d) the proposed method.
 
 ## Interpretability
 <div align=center>
-<img src="/figs/TFN_sq_snr_10.png" width="600">
+<img src="/figs/TFN_sq_snr_10.png" width="400">
 </div>
 <p align="center">
-Fig. Amplitude-frequency response of Kernels. This is reproduced from https://github.com/ChenQian0618/TFN, which concentrate on the global frequencies.
+Fig. Amplitude-frequency response of time-freq kernels. This is the reproduced TFN, which concentrates on the global frequencies.
 </p>
 
-Good low-pass filter, because the fault exists in the low frequency region.
+The proposed method could generate a lot of good **low-pass filters**, which is just in line with the fact that faults exist in the low frequency region.
 |Fig. 1. Results on normal sample   | Fig. 2. Results on inner fault sample  | Fig. 3. Results on outer fault sample  |
 |:----:|:----:|:----:|
 |<img src="/figs/sample2.jpg" width="300" /><br/> | <img src="/figs/sample68.jpg" width="300" /><br/>| <img src="/figs/sample250.jpg" width="300" /><br/>|
 
-## Acknowledgement
-Thanks to the following open source code and its researchers
-- https://github.com/ChenQian0618/TFN.
-- WKN
+## Acknowledgements
+Thanks to the following open source codes and the researchers:
+- [Time-Frequency Network](https://github.com/ChenQian0618/TFN)
+- [WaveletKernelNet](https://github.com/HazeDT/WaveletKernelNet)
