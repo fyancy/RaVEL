@@ -25,7 +25,7 @@ features, (c) hybrid features, and (d) the proposed method.
 </p>
 
 ## Interpretability
-As done in work [Time-Frequency Network](https://github.com/ChenQian0618/TFN)(FTN), the Amplitude-frequency response (AFR) could be used to analyze the filter property of kernels and further compare this with the FFT of signals.
+As done in work [Time-Frequency Network](https://github.com/ChenQian0618/TFN) (TFN), the amplitude-frequency response (AFR) can be used to analyze the filter property of kernels and further compare it with the FFT of signals. 
 <div align=center>
 <img src="/figs/TFN_sq_snr_10.png" width="400">
 </div>
