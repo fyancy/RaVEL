@@ -44,9 +44,8 @@ The proposed method could generate a lot of good **low-pass filters**, which is 
 Thanks to the following open source codes and the researchers:
 - [Time-Frequency Network](https://github.com/ChenQian0618/TFN)
 - [WaveletKernelNet](https://github.com/HazeDT/WaveletKernelNet)
-<!-- 
-[ROCKET](https://github.com/angus924/rocket) and [MultiROCKET](https://github.com/ChangWeiTan/MultiRocket)
--->
+- [ROCKET](https://github.com/angus924/rocket) and [MultiROCKET](https://github.com/ChangWeiTan/MultiRocket)
+
 
 
 [![Yong Feng's GitHub stats](https://github-readme-stats.vercel.app/api?username=fyancy&show_icons=true&theme=gruvbox)](https://github.com/fyancy)
