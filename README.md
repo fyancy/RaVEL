@@ -44,4 +44,4 @@ Thanks to the following open source codes and the researchers:
 - [WaveletKernelNet](https://github.com/HazeDT/WaveletKernelNet)
 
 
-[![Yong Feng's GitHub stats](https://github-readme-stats.vercel.app/api?username=fyancy&show_icons=true&theme=tokyonight)](https://github.com/fyancy/RaVEL)
+[![Yong Feng's GitHub stats](https://github-readme-stats.vercel.app/api?username=fyancy&show_icons=true&theme=gruvbox)](https://github.com/fyancy)
