@@ -5,7 +5,7 @@
 [![](https://img.shields.io/badge/Homepage-YongFeng-purple.svg)](https://fyancy.github.io/)
 
 
-Fast Random Wavelet Convolution for Early Fault Diagnosis
+Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 
 **Codes will be FULLY publicly available once the peer review is finished.** 🙃 🗓
 
