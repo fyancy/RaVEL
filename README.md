@@ -9,7 +9,7 @@ Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 
 **Codes will be FULLY publicly available once the peer review is finished.** 🙃 🗓
 
-**The paper entitled [_Beyond deep features: Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been accepted by MSSP. The author is sorting out the code and and will publish them soon. Please wait for a moment.** 🙃 🗓
+**The paper entitled [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been accepted by MSSP. The author is sorting out the code and and will publish them soon. Please wait for a moment.** 🙃 🗓 By the end of this week.
 
 ## Performance 🚀
 <div align=center>
