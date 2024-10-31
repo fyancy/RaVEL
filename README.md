@@ -13,7 +13,7 @@ Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 
 ## Performance 🚀
 <div align=center>
-<img src="/figs/rl_acc.png" width="400">
+<img src="/figs/rl_acc.png" width="500">
 </div>
 <p align="center">
 Fig. 1. Comparison of the proposed method with SOTA methods for EFD. 
