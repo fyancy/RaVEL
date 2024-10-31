@@ -7,9 +7,15 @@
 
 Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 
-**Codes will be FULLY publicly available once the peer review is finished.** 🙃 🗓
+**The paper entitled [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been published on MSSP. Authors are sorting out the code and and will publish a complete version soon. Please wait for a moment.** 🙃 🗓 By the end of this week.
 
-**The paper entitled [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been accepted by MSSP. The author is sorting out the code and and will publish them soon. Please wait for a moment.** 🙃 🗓 By the end of this week.
+- [x] Quick Start
+- [ ] Proposed method and its components
+- [ ] CPU-based comparison methods
+- [ ] GPU-based comparison methods
+
+[2024-10-30] We have provided a [`quick start`](https://github.com/fyancy/RaVEL/blob/main/quick_start.ipynb) file to fast validate RaVEL with open SEU data. Plz download the code file, [data file](https://drive.google.com/drive/folders/1GbioYlKtaTG1KRg9b_Krq3p7z00L7pz7?usp=sharing), and try it.
+
 
 ## Performance 🚀
 <div align=center>
