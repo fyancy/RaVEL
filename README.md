@@ -13,10 +13,12 @@ Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 - [ ] Proposed method and its components
 - [ ] CPU-based comparison methods
 - [ ] GPU-based comparison methods
-- [ ] Python package
+- [x] Python package
 - [ ] A tutorial for ROCKET family
 
 [2024-10-30] We have provided a [`quick start`](https://github.com/fyancy/RaVEL/blob/main/quick_start.ipynb) file to fast validate RaVEL with open SEU data. Plz download the code file, [data file](https://drive.google.com/drive/folders/1GbioYlKtaTG1KRg9b_Krq3p7z00L7pz7?usp=sharing), and try it.
+
+[2024-10-31] You can install our method by `pip install randwave`
 
 
 ## Performance 🚀
