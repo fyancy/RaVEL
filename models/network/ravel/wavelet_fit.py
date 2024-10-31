@@ -56,11 +56,8 @@ def fit_morlet_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
     dilations = np.zeros(num_kernels, dtype=np.int32)
     paddings = np.zeros(num_kernels, dtype=np.int32)
 
-    fact_a = np.random.uniform(1, 10, num_kernels)  # 2023.9.7
+    fact_a = np.random.uniform(1, 10, num_kernels)
     fact_b = np.random.uniform(-5, 5, num_kernels)
-
-    # fact_a = np.random.uniform(0.1, 10, num_kernels)  # for Laplace; single-side Morlet/Hermit/Harmonic
-    # fact_b = np.random.uniform(0, 5, num_kernels)  # todo: modify
 
     quantiles = _quantiles(num_kernels)
 
@@ -68,10 +65,7 @@ def fit_morlet_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
     for i in range(num_kernels):
         _length = lengths[i]
 
-        # _timestamps = np.linspace(0, _length-1, num=_length)  # 80.76%, sq, snr=-10
         _timestamps = np.linspace(0, _length // 2, num=_length)  # use this, 82.18%, sq, snr=-10
-        # _timestamps = np.linspace(-_length // 2 + 1, _length // 2, num=_length)
-
         _timestamps = (_timestamps + fact_b[i]) / fact_a[i]
         _weights = Morlet(_timestamps) * np.sqrt(1 / fact_a[i])
 
@@ -108,13 +102,8 @@ def fit_laplace_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
     dilations = np.zeros(num_kernels, dtype=np.int32)
     paddings = np.zeros(num_kernels, dtype=np.int32)
 
-    # fact_a = np.random.uniform(1, 10, num_kernels)  # 2023.9.7
-    # fact_b = np.random.uniform(-5, 5, num_kernels)
-
     fact_a = np.random.uniform(0.1, 10, num_kernels)  # for Laplace; single-side Morlet/Hermit/Harmonic
     fact_b = np.random.uniform(0, 5, num_kernels)  # todo: modify
-    # fact_a = np.random.uniform(1, 10, num_kernels)
-    # fact_b = np.random.uniform(-5, 5, num_kernels)
 
     quantiles = _quantiles(num_kernels)
 
@@ -125,11 +114,6 @@ def fit_laplace_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
         _timestamps = np.linspace(0, 1, num=_length)
         _timestamps = (_timestamps - fact_b[i]) / fact_a[i]   # + or - is OK
         _weights = LaplaceWavelet(_timestamps) * np.sqrt(1 / fact_a[i])
-
-        # a, b = -2, 2
-        # _weights = a + (_weights - min(_weights)) * (
-        #             (b - a) / (max(_weights) - min(_weights)))
-        # _weights = np.around(_weights)
 
         _weights = (_weights - _weights.mean()) / (_weights.std() + 1e-12)
         b1 = a1 + _length
@@ -165,13 +149,7 @@ def fit_hermitian_kernels(X, num_kernels, candidate_lengths, quantile_bias=True)
     paddings = np.zeros(num_kernels, dtype=np.int32)
 
     fact_a = np.random.uniform(5, 10, num_kernels)  # for Laplace; single-side Morlet/Hermit/Harmonic
-    fact_b = np.random.uniform(-5, 5, num_kernels)  # 2023.9.7
-
-    # fact_a = np.random.uniform(1, 10, num_kernels)  # for Laplace; single-side Morlet/Hermit/Harmonic
-    # fact_b = np.random.uniform(-5, 5, num_kernels)  # 2023.10.24
-
-    # fact_a = np.random.uniform(0.1, 10, num_kernels)  # for Laplace; single-side Morlet/Hermit/Harmonic
-    # fact_b = np.random.uniform(0, 5, num_kernels)  # todo: modify
+    fact_b = np.random.uniform(-5, 5, num_kernels)
 
     quantiles = _quantiles(num_kernels)
 
@@ -180,11 +158,8 @@ def fit_hermitian_kernels(X, num_kernels, candidate_lengths, quantile_bias=True)
         _length = lengths[i]
 
         _timestamps = np.linspace(0, _length - 1, num=_length)  # use this, better than double-side for Hermit
-        # _timestamps = np.linspace(-_length // 2 + 1, _length // 2, num=_length)
-
         _timestamps = (_timestamps - fact_b[i]) / fact_a[i]
         _weights = HermitianIm(_timestamps) * np.sqrt(1 / fact_a[i])
-        # _weights = HermitianIm(_timestamps) if (i + 1) % 2 == 0 else HermitianRe(_timestamps)
 
         _weights = (_weights - _weights.mean()) / (_weights.std() + 1e-12)
         b1 = a1 + _length
@@ -219,13 +194,8 @@ def fit_harmonic_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
     dilations = np.zeros(num_kernels, dtype=np.int32)
     paddings = np.zeros(num_kernels, dtype=np.int32)
 
-    fact_a = np.random.uniform(1, 10, num_kernels)  # 2023.9.7
-    # fact_a = np.random.uniform(0.1, 10, num_kernels)
+    fact_a = np.random.uniform(1, 10, num_kernels)
     fact_b = np.random.uniform(-5, 5, num_kernels)  # for Harmonic single-side
-    # fact_b = np.random.uniform(0, 5, num_kernels)  # todo: modify
-
-    # fact_a = np.random.uniform(0.1, 100, num_kernels)  # for Harmonic single-side; worse
-    # fact_b = np.random.uniform(0, 10, num_kernels)
 
     quantiles = _quantiles(num_kernels)
 
@@ -233,14 +203,9 @@ def fit_harmonic_kernels(X, num_kernels, candidate_lengths, quantile_bias=True):
     for i in range(num_kernels):
         _length = lengths[i]
 
-        # _timestamps = np.linspace(0, _length - 1, num=_length)
         _timestamps = np.linspace(0, _length // 2, num=_length)  # use this, better
-        # _timestamps = np.linspace(-_length // 2 + 1, _length // 2, num=_length)
-
         _timestamps = (_timestamps + fact_b[i]) / fact_a[i]
         _weights = HarmonicRe(_timestamps) * np.sqrt(1 / fact_a[i])  # better
-        # _weights = HarmonicIm(_timestamps)
-        # _weights = HarmonicRe(_timestamps) if (i + 1) % 2 == 0 else HarmonicIm(_timestamps)
 
         _weights = (_weights - _weights.mean()) / (_weights.std() + 1e-12)
         b1 = a1 + _length

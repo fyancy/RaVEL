@@ -5,10 +5,6 @@ def LaplaceWavelet(p):
     A = 0.08
     eps = np.random.uniform(0.01, 0.05)  # 0.03, 该参数可变，敏感
     tau = 0.1  # 与时移因子 b效果一样，效果没有提升
-    # taus = np.array([0.1, 0.3, 0.5])
-    # tau = np.random.choice(taus, 1)
-    # f = np.random.randint(10, 40)  # 50-100
-    # f = 20  # 10, 20, 20-best on SQ
     f = 50  # default: 50, f = 60 better
     w = 2 * np.pi * f
     q = 1 - pow(eps, 2)

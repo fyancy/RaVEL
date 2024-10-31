@@ -88,8 +88,6 @@ def apply_kernels_multi(X, kernels, cosine_pool):
             a1 = b1
             a2 = b2
 
-        # progress_proxy.update(i)
-
     if cosine_pool:
         _X = np.cos(_X)
 
@@ -142,14 +140,8 @@ def apply_kernel_multi(X, weights, length, bias, dilation, padding):
     mean1 = _mean / _ppv if _ppv > 0 else 0  # 98.44%
     mean2 = _mean / output_length if _ppv > 0 else 0  # 98.16%
     max_stretch = _max_stretch / _ppv if _ppv > 0 else 0  # 49%; 72% (/_ppv)
-    # max_stretch = _max_stretch / output_length if _ppv > 0 else 0  # worse
-    # mean_index = _mean_index / output_length if _ppv > 0 else -1  # 78.07%
 
-    return ppv, max_stretch, mean2, mean1  # best, 70%+ on SQ SNR -10
-    # return np.cos(ppv), np.cos(max_stretch), np.cos(mean2), np.sin(mean1)  # best,
-    # return ppv, 0., np.cos(mean2), np.cos(mean1)  # best, on SEU SNR 0
-    # return ppv, 0., mean1, mean2  # 87.8%
-    # return ppv, mean2, 0., 0.  # original best
+    return ppv, max_stretch, mean2, mean1
 
 
 # --------------------------------
@@ -225,8 +217,6 @@ def apply_kernel_multi_pool_of_cos(X, weights, length, bias, dilation, padding):
     mean1 = _mean / _ppv if _ppv > 0 else 0  # 98.44%
     mean2 = _mean / output_length if _ppv > 0 else 0  # 98.16%
     max_stretch = _max_stretch / _ppv if _ppv > 0 else 0  # 49%; 72% (/_ppv)
-    # max_stretch = _max_stretch / output_length if _ppv > 0 else 0  # for seu
-    # mean_index = _mean_index / output_length if _ppv > 0 else -1  # 78.07%
 
     return ppv, max_stretch, mean2, mean1  # best, 70%+ on SQ SNR -10
 
