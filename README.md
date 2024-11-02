@@ -4,10 +4,9 @@
 [![](https://img.shields.io/badge/CSDN-燕策西-blue.svg)](https://blog.csdn.net/weixin_43543177?spm=1001.2101.3001.5343)
 [![](https://img.shields.io/badge/Homepage-YongFeng-purple.svg)](https://fyancy.github.io/)
 
+Extracting meaningful and significant signal features is the eternal theme of mechanical fault diagnosis. Recently deep learning has promoted the success of automatic feature extraction in various engineering fields. However, a network must be deep enough to extract hidden fault information, limiting its interpretability, efficiency, and generalization. We argue that even shallow features can surpass deep features.
 
-Fast Random Wavelet Convolution for Weak-Fault Diagnosis
-
-**The paper [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been published on MSSP. ** 🙃 🗓.
+Fast **Ra**ndom Wa**VEL**et (RaVEL) Convolution for Weak-Fault Feature Extraction for Mechanical Signals. The paper [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been published on MSSP. 🙃
 
 - [x] Quick Start
 - [x] Proposed method and its components
