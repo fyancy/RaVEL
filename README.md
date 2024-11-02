@@ -7,7 +7,7 @@
 
 Fast Random Wavelet Convolution for Weak-Fault Diagnosis
 
-**The paper entitled [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been published on MSSP. Authors are sorting out the code and and will publish a complete version soon. Please wait for a moment.** 🙃 🗓 By the end of this week.
+**The paper [_Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery_](https://www.sciencedirect.com/science/article/pii/S0888327024009555?dgcid=coauthor) has been published on MSSP. ** 🙃 🗓.
 
 - [x] Quick Start
 - [ ] Proposed method and its components
@@ -51,6 +51,20 @@ The proposed method could generate a lot of good **low-pass filters**, which is 
 |Fig. 1. Results on normal sample   | Fig. 2. Results on inner fault sample  | Fig. 3. Results on outer fault sample  |
 |:----:|:----:|:----:|
 |<img src="/figs/sample2.jpg" width="300" /><br/> | <img src="/figs/sample68.jpg" width="300" /><br/>| <img src="/figs/sample250.jpg" width="300" /><br/>|
+
+## Citation
+If you find this work useful, please cite our paper:
+```
+@article{feng2025beyond,
+  title={Beyond deep features: Fast random wavelet kernel convolution for weak-fault feature extraction of rotating machinery},
+  author={Feng, Yong and Zheng, Chengye and Chen, Jinglong and Pan, Tongyang and Xie, Jingsong and He, Shuilong and Wang, Huiling},
+  journal={Mechanical Systems and Signal Processing},
+  volume={224},
+  pages={112057},
+  year={2025},
+  publisher={Elsevier}
+}
+```
 
 ## Acknowledgements
 Thanks to the following open source codes and the researchers:
